@@ -1,0 +1,26 @@
+{
+  "name": "unit4-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harsh244007/UNIT4-SERVER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harsh244007/UNIT4-SERVER/issues"
+  },
+  "homepage": "https://github.com/Harsh244007/UNIT4-SERVER#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.2.9"
+  }
+}
