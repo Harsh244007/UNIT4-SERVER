@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const watchSchema = new mongoose.Schema(
     {
 img: {type:String, required:true},
-name: {type:String, required:false,unique:false},    
+name: {type:String, required:false},    
 price: {type:Number, required:true},
 strikeprice: {type:Number, required:true},
 description: {type:String, required:true},
@@ -20,6 +20,6 @@ backtimg: {type:String, required:false}
     }
 );
 
-const Watch = mongoose.model("watch",watchSchema);
+const Watch = mongoose.model("watcha",watchSchema);
 
 module.exports = Watch;

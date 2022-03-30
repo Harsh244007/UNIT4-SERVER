@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const womenSchema = new mongoose.Schema(
     {
 img: {type:String, required:true},
-name: {type:String, required:false,unique:false},    
+name: {type:String, required:false},    
 price: {type:Number, required:true},
 strikeprice: {type:Number, required:true},
 description: {type:String, required:true},
@@ -19,6 +19,6 @@ backtimg: {type:String, required:false}
     }
 );
 
-const Women = mongoose.model("women",womenSchema);
+const Women = mongoose.model("womenh",womenSchema);
 
 module.exports = Women;
