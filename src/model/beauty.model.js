@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const beautySchema = new mongoose.Schema(
     {
 img: {type:String, required:true},
-name: {type:String, required:true,unique:true},    
+name: {type:String, required:true,unique:false},    
 price: {type:Number, required:true},
 strikeprice: {type:Number, required:true},
 description: {type:String, required:true},

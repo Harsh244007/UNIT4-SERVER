@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const womenSchema = new mongoose.Schema(
     {
 img: {type:String, required:true},
-name: {type:String, required:false,unique:true},    
+name: {type:String, required:false,unique:false},    
 price: {type:Number, required:true},
 strikeprice: {type:Number, required:true},
 description: {type:String, required:true},
