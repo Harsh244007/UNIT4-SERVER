@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.json());
+//app.use(express.json());
 // app.use(auth)
 
 // function auth(req, res, next) {
@@ -28,6 +28,8 @@ const mensController = require("./controller/mens.controller");
 const watchController = require("./controller/watch.controller");
 const womenController = require("./controller/women.controller");
 
+const likesController = require("./controller/likes.controller");
+app.use("/likes", likesController)
 app.use("/bargains", bargainsController)
 app.use("/beauty", beautyController)
 app.use("/brands", brandsController)
