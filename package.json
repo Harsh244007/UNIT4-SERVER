@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Harsh244007/UNIT4-SERVER#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "mongo": "^0.1.0",
     "mongoose": "^6.2.9"
