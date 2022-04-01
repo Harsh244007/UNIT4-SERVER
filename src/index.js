@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
-const cors=require("cors")
-app.use(cors());
+
 //app.use(express.json());
 // app.use(auth)
 
@@ -28,9 +27,11 @@ const luxeController = require("./controller/luxe.controller");
 const mensController = require("./controller/mens.controller");
 const watchController = require("./controller/watch.controller");
 const womenController = require("./controller/women.controller");
-
 const likesController = require("./controller/likes.controller");
-app.use("/likes", likesController)
+const cartController = require("./controller/cart.controller");
+
+app.use("/cart", cartController)
+app.use("/likes",likesController)
 app.use("/bargains", bargainsController)
 app.use("/beauty", beautyController)
 app.use("/brands", brandsController)
