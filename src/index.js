@@ -31,6 +31,8 @@ const womenController = require("./controller/women.controller");
 
 const likesController = require("./controller/likes.controller");
 app.use("/likes", likesController)
+const countController = require("./controller/count.controller");
+app.use("/count", countController)
 app.use("/bargains", bargainsController)
 app.use("/beauty", beautyController)
 app.use("/brands", brandsController)
