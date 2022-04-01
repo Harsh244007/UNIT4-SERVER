@@ -32,6 +32,7 @@ const cartController = require("./controller/cart.controller");
 
 app.use("/cart", cartController)
 app.use("/likes",likesController)
+
 app.use("/bargains", bargainsController)
 app.use("/beauty", beautyController)
 app.use("/brands", brandsController)
